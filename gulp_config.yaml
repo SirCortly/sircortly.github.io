@@ -1,0 +1,15 @@
+dest:
+    js: public/js
+    css: public/css
+    fonts: public/fonts
+src:
+    css: src/css/*.css
+third_party:
+    css:
+        - node_modules/bootstrap/dist/css/bootstrap.min.css
+    fonts:
+        - node_modules/bootstrap/dist/fonts/glyphicons-halflings-regular.eot
+        - node_modules/bootstrap/dist/fonts/glyphicons-halflings-regular.svg
+        - node_modules/bootstrap/dist/fonts/glyphicons-halflings-regular.ttf
+        - node_modules/bootstrap/dist/fonts/glyphicons-halflings-regular.woff
+
