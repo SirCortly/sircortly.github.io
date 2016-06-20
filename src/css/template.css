@@ -1,4 +1,4 @@
-html, body, .container {
+html, body, .container-fluid {
     height: 100%;
     /*background: url(/public/img/greyzz.png) repeat 0 0;*/
     /*background: url(/public/img/sayagata-400px.png) repeat 0 0;*/
@@ -7,7 +7,7 @@ html, body, .container {
     background: url(/public/img/subtle_white_feathers.png) repeat 0 0;
 }
 
-.container {
+.container-fluid {
     display: table;
     vertical-align: middle;
 }
@@ -21,7 +21,8 @@ html, body, .container {
 #profile-image {
     height: 10em;
     width: 10em;
-    margin-right: 40px;
+    margin: 0 auto;
+    box-shadow: 1px 1px 2px 3px #ccc;
 }
 
 #name {
@@ -53,3 +54,11 @@ html, body, .container {
     color: #3399ff
 }
 
+@media(max-width:991px) {
+
+    .content {
+        text-align: center;
+    }
+
+
+}
