@@ -14,6 +14,8 @@
     <!-- CSS Dependencies -->
     <link href="public/css/dependencies.min.css" rel="stylesheet">
     <link href="public/css/app.min.css" rel="stylesheet">
+    <link href='http://fonts.googleapis.com/css?family=Lobster' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Cabin' rel='stylesheet' type='text/css'>
 
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -23,28 +25,43 @@
     <![endif]-->
 
 </head>
-
 <body>
 
     <!-- Page Content -->
     <div class="container">
-
-        <!-- Second Featurette -->
-        <div class="featurette" id="services">
+        <div class="content" id="services">
             <div class="row">
                 <div class="col-sm-3"></div>
-                <div class="col-sm-6">
-                    <img class="featurette-image img-circle img-responsive pull-left" src="public/img/profile.jpg" alt="A strikingly handsome lad">
-                    <h2 class="featurette-heading">Cort Lyons <small>(SirCortly)</small></h2>
-                    <p class="lead">Donec ullamcorper nulla non metus auctor fringilla. Vestibulum id ligula porta felis euismod semper. Praesent commodo cursus magna, vel scelerisque nisl consectetur. Fusce dapibus, tellus ac cursus commodo.</p>
+                <div class="col-sm-2">
+                    <img id="profile-image" class="img-circle img-responsive pull-left" src="public/img/profile.jpg" alt="A strikingly handsome lad">
                 </div>
-                <div class="col-sm-3"></div>
+                <div class="col-sm-5">
+                    <div class="row col-sm-12 content-row">
+                        <h2 id="name">Cort Lyons <small>(SirCortly)</small></h2>
+                    </div>
+                    <div class="row col-sm-12 content-row">
+                        <p id="about">I'm a Software Developer
+                        currently based out of Orlando Florida. I'm an avid
+                        reader, seeker of knowledge, and builder of things.</p>
+                    </div>
+                    <div class="row col-sm-12 content-row">
+                        <div class="col-sm-2 link">
+                            <a href=""><i class="fa fa-envelope fa-2x"></i></a><br>
+                        </div>
+                        <div class="col-sm-2 link">
+                            <a href="https://github.com/SirCortly" class="external-link"><i class="fa fa-github fa-2x"></i></a><br>
+                        </div>
+                        <div class="col-sm-2 link">
+                            <a href="https://www.linkedin.com/in/cort-lyons-688693a7"><i class="fa fa-linkedin fa-2x"></i></a><br>
+                        </div>
+                        <div class="col-sm-2 link">
+                            <a href="/public/files/CortLyonsResume.pdf" download="CortLyonsResume.pdf"><i class="fa fa-file-pdf-o fa-2x"></i></a><br>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
-
     </div>
-    <!-- /.container -->
 
 </body>
-
 </html>
