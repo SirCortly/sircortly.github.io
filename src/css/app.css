@@ -19,6 +19,7 @@ html, body, .container-fluid {
     width: 10em;
     margin: 0 auto;
     box-shadow: 1px 1px 2px 3px #ccc;
+    padding-right: 0px;
 }
 
 #name {
@@ -57,5 +58,13 @@ html, body, .container-fluid {
 @media(max-width: 991px){
     .content {
         text-align: center;
+    }
+
+    #profile-image {
+        padding-right: 10px;
+    }
+
+    .content-row {
+        padding-left: 10px;
     }
 }
