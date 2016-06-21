@@ -28,16 +28,25 @@ gulp.task('css', function() {
 
 // -------------------------------------------------------------------------
 
+gulp.task('js', function() {
+    gulp.src(config.src.js)
+        .pipe(uglify())
+        .pipe(concat('app.min.js'))
+        .pipe(gulp.dest(config.dest.js));
+});
+
+// -------------------------------------------------------------------------
+
 /**
  * Compile Third Party Dependencies
  */
 gulp.task('dependencies', function() {
 
-    //// Combine JS Files
-    //gulp.src(config.third_party.js)
-        //.pipe(uglify())
-        //.pipe(concat('dependencies.min.js'))
-        //.pipe(gulp.dest(config.dest.js));
+    // Combine JS Files
+    gulp.src(config.third_party.js)
+        .pipe(uglify())
+        .pipe(concat('dependencies.min.js'))
+        .pipe(gulp.dest(config.dest.js));
 
     // Combine CSS Files
     gulp.src(config.third_party.css)
@@ -66,6 +75,7 @@ gulp.task('watch', function () {
  * * Default task
  * */
 gulp.task('default', [
+    'js',
     'css',
     'dependencies',
     'watch'

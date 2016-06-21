@@ -41,6 +41,13 @@ html, body, .container-fluid {
 .link {
     color: #777;
     padding-right:10px;
+    text-align: center;
+}
+
+.icon-text {
+    visibility: hidden;
+    font-family: 'Lobster', Georgia, Times, serif;
+    font-size: 18px;
 }
 
 .link:hover {

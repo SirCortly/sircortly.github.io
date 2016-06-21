@@ -3,8 +3,11 @@ dest:
     css: public/css
     fonts: public/fonts
 src:
+    js: src/js/*.js
     css: src/css/*.css
 third_party:
+    js:
+        - node_modules/jquery/dist/jquery.min.js
     css:
         - node_modules/bootstrap/dist/css/bootstrap.min.css
         - node_modules/font-awesome/css/font-awesome.min.css
